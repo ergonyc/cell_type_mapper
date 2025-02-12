@@ -1,0 +1,18 @@
+#conda env create -f mmc_base.yml 
+#conda env create -f mmc_base.yml 
+
+name: mmc_base
+channels:
+- conda-forge
+dependencies:
+- python=3.12
+- ipykernel
+- ipywidgets
+- notebook
+- pandas
+- pip
+- pip:
+  - "git+https://github.com/alleninstitute/abc_atlas_access.git"
+  # pip install -e .
+  # - "--editable=git+https://github.com/pythonforfacebook/facebook-sdk.git@8c0d34291aaafec00e02eaa71cc2a242790a0fcc#egg=facebook_sdk-master"
+
